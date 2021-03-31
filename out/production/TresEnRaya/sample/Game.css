@@ -1,0 +1,73 @@
+.root {
+    -fx-background-color: rgb(106, 105, 150);
+}
+
+#boton1 {
+    -fx-background-color: rgb(74, 68, 105);
+}
+
+#boton2 {
+    -fx-background-color: rgb(74, 68, 105);
+}
+
+#boton3 {
+    -fx-background-color: rgb(74, 68, 105);
+}
+
+#boton4 {
+    -fx-background-color: rgb(74, 68, 105);
+}
+
+#boton5 {
+    -fx-background-color: rgb(74, 68, 105);
+}
+
+#boton6 {
+    -fx-background-color: rgb(74, 68, 105);
+}
+
+#boton7 {
+    -fx-background-color: rgb(74, 68, 105);
+}
+
+#boton8 {
+    -fx-background-color: rgb(74, 68, 105);
+}
+
+#boton9 {
+    -fx-background-color: rgb(74, 68, 105);
+}
+
+#startGameBoton {
+    -fx-background-color: rgb(138, 255, 169);
+    -fx-background-radius: 5px;
+}
+
+#resetBoton {
+    -fx-background-color: rgb(196, 85, 71);
+     -fx-background-radius: 5px;
+}
+
+#resetBoton:hover {
+    -fx-background-color: rgb(255, 29, 0);
+}
+
+#startGameBoton:hover {
+    -fx-background-color: rgb(61, 255, 113);
+}
+
+#playerPlayerLabel {
+    -fx-text-fill: rgb(62, 62, 84);
+}
+
+#playerMachineLabel {
+    -fx-text-fill: rgb(62, 62, 84);
+}
+
+#machineMachineLabel {
+    -fx-text-fill: rgb(62, 62, 84);
+}
+
+#currentGameModeLabel {
+    -fx-text-fill: rgb(232, 232, 220);
+}

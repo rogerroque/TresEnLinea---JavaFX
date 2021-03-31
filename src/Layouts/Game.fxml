@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="570.0" prefWidth="900.0" vgap="10" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Game">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="580.0" prefWidth="900.0">
+            <children>
+                <Button id="startGameBoton" fx:id="startGame" layoutX="553.0" layoutY="371.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="263.0" text="START GAME">
+                    <font>
+                        <Font name="System Bold" size="26.0" />
+                    </font>
+                </Button>
+                <BorderPane prefHeight="15.0" prefWidth="892.0" />
+                <RadioButton id="playerPlayerLabel" fx:id="playerPlayer" layoutX="553.0" layoutY="171.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="263.0" text="PLAYER VS PLAYER" toggleGroup="$gameMode">
+                    <font>
+                        <Font name="System Bold" size="22.0" />
+                    </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="gameMode" />
+               </toggleGroup>
+                </RadioButton>
+                <RadioButton id="playerMachineLabel" fx:id="playerMachine" layoutX="553.0" layoutY="225.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="263.0" text="PLAYER VS MACHINE" toggleGroup="$gameMode">
+                    <font>
+                        <Font name="System Bold" size="22.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton id="machineMachineLabel" fx:id="machineMachine" layoutX="553.0" layoutY="274.0" mnemonicParsing="false" text="MACHINE VS MACHINE" toggleGroup="$gameMode">
+                    <font>
+                        <Font name="System Bold" size="22.0" />
+                    </font>
+                </RadioButton>
+                <Button id="resetBoton" fx:id="reset" layoutX="594.0" layoutY="438.0" mnemonicParsing="false" onAction="#reset" prefHeight="56.0" prefWidth="189.0" text="RESET">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+            <Label id="gameModeLabel" fx:id="gameModeLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="259.0" layoutY="64.0" prefHeight="44.0" prefWidth="374.0" text="Select a game mode to start">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label id="currentGameModeLabel" alignment="CENTER" layoutX="351.0" layoutY="32.0" prefHeight="44.0" prefWidth="189.0" text="Current game mode:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+                  <MenuBar layoutX="-5.0" prefHeight="25.0" prefWidth="908.0">
+                      <menus>
+                          <Menu mnemonicParsing="false" text="File">
+                              <items>
+                                  <MenuItem mnemonicParsing="false" text="Close" />
+                              </items>
+                          </Menu>
+                          <Menu mnemonicParsing="false" text="Edit">
+                              <items>
+                                  <MenuItem mnemonicParsing="false" text="Delete" />
+                              </items>
+                          </Menu>
+                          <Menu mnemonicParsing="false" text="Help">
+                              <items>
+                                  <MenuItem mnemonicParsing="false" text="About" />
+                              </items>
+                          </Menu>
+                      </menus>
+                  </MenuBar>
+            <Label fx:id="buttonsDisabledLabel" alignment="CENTER" layoutX="125.0" layoutY="537.0" prefHeight="25.0" prefWidth="271.0" text="Buttons disabled">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button id="boton1" fx:id="boton1" alignment="CENTER" layoutX="34.0" layoutY="134.0" mnemonicParsing="false" prefHeight="125.0" prefWidth="139.0">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Button>
+            <Button id="boton2" fx:id="boton2" layoutX="191.0" layoutY="134.0" mnemonicParsing="false" prefHeight="125.0" prefWidth="139.0">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Button>
+            <Button id="boton7" fx:id="boton7" layoutX="34.0" layoutY="409.0" mnemonicParsing="false" prefHeight="125.0" prefWidth="139.0">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Button>
+            <Button id="boton4" fx:id="boton4" layoutX="34.0" layoutY="272.0" mnemonicParsing="false" prefHeight="125.0" prefWidth="139.0">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Button>
+            <Button id="boton5" fx:id="boton5" layoutX="191.0" layoutY="272.0" mnemonicParsing="false" prefHeight="125.0" prefWidth="139.0">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Button>
+            <Button id="boton8" fx:id="boton8" layoutX="191.0" layoutY="409.0" mnemonicParsing="false" prefHeight="125.0" prefWidth="139.0">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Button>
+            <Button id="boton3" fx:id="boton3" layoutX="346.0" layoutY="134.0" mnemonicParsing="false" prefHeight="125.0" prefWidth="139.0">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Button>
+            <Button id="boton6" fx:id="boton6" layoutX="346.0" layoutY="272.0" mnemonicParsing="false" prefHeight="125.0" prefWidth="139.0">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Button>
+            <Button id="boton9" fx:id="boton9" layoutX="346.0" layoutY="409.0" mnemonicParsing="false" prefHeight="125.0" prefWidth="139.0">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Button>
+            </children>
+        </Pane>
+    </children>
+</GridPane>
